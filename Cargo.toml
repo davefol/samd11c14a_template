@@ -1,0 +1,17 @@
+[package]
+name = "blinky"
+version = "0.1.0"
+edition = "2018"
+
+[profile.release]
+debug = true
+
+[profile.dev]
+opt-level = "s"
+
+
+[dependencies]
+samd11_bare = { git = "https://github.com/atsamd-rs/atsamd.git", features = [] }
+panic-halt = "0.2"
+panic-semihosting = "0.5"
+
